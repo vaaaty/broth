@@ -1,0 +1,387 @@
+.community-impact-page {
+  padding: 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  color: #1e3a8a;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 1.2em;
+}
+
+.impact-sections {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.community-overview h2,
+.personal-impact h2,
+.community-goals-detailed h2,
+.impact-trends h2,
+.impact-stories h2 {
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.community-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.community-stat {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-top: 4px solid #0d9488;
+  transition: transform 0.3s ease;
+}
+
+.community-stat:hover {
+  transform: translateY(-3px);
+}
+
+.community-stat .stat-value {
+  font-size: 3em;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.community-stat .stat-label {
+  color: #64748b;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.personal-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.personal-stat {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease;
+  border-left: 4px solid #0d9488;
+}
+
+.personal-stat:hover {
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  font-size: 2.5em;
+  width: 60px;
+  height: 60px;
+  background: #f0f9ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-content .stat-value {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+.stat-content .stat-label {
+  color: #64748b;
+  font-size: 0.9em;
+}
+
+.community-goals-detailed .goal-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 2px solid #0d9488;
+}
+
+.goal-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.goal-progress {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(135deg, #0d9488, #0f766e);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.progress-percent {
+  background: #0d9488;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.goal-rewards h4 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.goal-rewards ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.goal-rewards li {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background: #f0f9ff;
+  border-radius: 8px;
+  color: #0369a1;
+  font-weight: 500;
+  border-left: 3px solid #0d9488;
+}
+
+.impact-trends {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.trends-chart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  height: 200px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+
+.trend-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 80px;
+}
+
+.bar-container {
+  height: 150px;
+  width: 40px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  position: relative;
+}
+
+.businesses-bar {
+  background: #0d9488;
+  border-radius: 4px 4px 0 0;
+  flex: 1;
+  transition: height 0.3s ease;
+  min-height: 10px;
+}
+
+.impact-bar {
+  background: #1e3a8a;
+  border-radius: 4px 4px 0 0;
+  flex: 1;
+  transition: height 0.3s ease;
+  min-height: 10px;
+}
+
+.month-label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9em;
+}
+
+.bar-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.7em;
+  color: #64748b;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.legend-color.businesses {
+  background: #0d9488;
+}
+
+.legend-color.impact {
+  background: #1e3a8a;
+}
+
+.impact-stories {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.story-card {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #0d9488;
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-3px);
+}
+
+.story-avatar {
+  width: 50px;
+  height: 50px;
+  background: #0d9488;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.story-card h4 {
+  color: #1e3a8a;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+.story-card p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.story-meta {
+  color: #64748b;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .community-impact-page {
+    padding: 15px;
+  }
+  
+  .page-header h1 {
+    font-size: 2.2em;
+  }
+  
+  .community-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .personal-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .personal-stat {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .trends-chart {
+    gap: 15px;
+  }
+  
+  .bar-container {
+    width: 30px;
+  }
+  
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .goal-card {
+    padding: 25px;
+  }
+}

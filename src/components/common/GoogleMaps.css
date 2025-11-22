@@ -1,0 +1,246 @@
+//GEMINI
+
+.google-maps-integration {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.maps-header h3 {
+  color: #007bff;
+  margin-top: 0;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.maps-content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Map Visualization */
+.map-visualization {
+  flex: 1;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mock-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #e0f7fa; /* Light blue map color */
+  background-image: linear-gradient(45deg, #c8e6c9 25%, transparent 25%),
+                    linear-gradient(-45deg, #c8e6c9 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #c8e6c9 75%),
+                    linear-gradient(-45deg, transparent 75%, #c8e6c9 75%);
+  background-size: 20px 20px; /* Grid effect */
+}
+
+.user-location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #dc3545;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.shop-marker {
+  position: absolute;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.shop-marker:hover, .shop-marker.selected {
+  transform: scale(1.3);
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.shop-marker.retailer { color: #007bff; }
+.shop-marker.wholesaler { color: #ffc107; }
+
+.map-legend {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-item .marker {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+/* Shops List */
+.shops-list {
+  flex: 1;
+}
+
+.shops-list h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.shops-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.shop-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.shop-card:hover {
+  background-color: #f8f9fa;
+  border-color: #cce5ff;
+}
+
+.shop-card.selected {
+  border-color: #007bff;
+  background-color: #e9f5ff;
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.shop-header h5 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.status.open { color: #28a745; font-weight: bold; }
+.status.closed { color: #dc3545; }
+
+.shop-details p {
+  margin: 3px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.local-products {
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px dashed #eee;
+  font-size: 0.85em;
+}
+
+.product-tags {
+  margin-top: 5px;
+}
+
+.product-tag {
+  display: inline-block;
+  background-color: #ffebcd;
+  color: #d89f02;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.75em;
+}
+
+.shop-actions {
+  margin-top: 10px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 8px;
+}
+
+.shop-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-right: 8px;
+  transition: background-color 0.2s;
+}
+
+.shop-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Selected Shop Details */
+.selected-shop-details {
+  border-top: 2px solid #007bff;
+  padding-top: 15px;
+  margin-top: 15px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.selected-shop-details h4 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.shop-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.type-tag.retailer { color: #007bff; font-weight: bold; }
+.type-tag.wholesaler { color: #ffc107; font-weight: bold; }
+
+.action-buttons button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.action-buttons .primary-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.action-buttons .secondary-btn {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+this is for maps

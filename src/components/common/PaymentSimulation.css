@@ -1,0 +1,272 @@
+.payment-simulation {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.payment-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.payment-header h3 {
+  color: #1e3a8a;
+  margin-bottom: 8px;
+  font-size: 1.6em;
+}
+
+.payment-header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-method:hover {
+  border-color: #1e3a8a;
+}
+
+.payment-method input[type="radio"] {
+  margin: 0;
+}
+
+.payment-method input[type="radio"]:checked + .method-icon {
+  background: #1e3a8a;
+  color: white;
+}
+
+.method-icon {
+  width: 40px;
+  height: 40px;
+  background: #f8fafc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.method-text {
+  font-weight: 500;
+  color: #374151;
+}
+
+.card-details,
+.upi-details,
+.cod-details {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.card-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.card-input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 0.8em;
+  margin-top: 5px;
+  display: block;
+}
+
+.upi-note {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 6px;
+  padding: 12px 15px;
+  color: #0369a1;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.cod-details {
+  text-align: center;
+}
+
+.cod-info {
+  background: #f0f9ff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px dashed #0d9488;
+}
+
+.cod-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.cod-info p {
+  margin: 0 0 10px 0;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+.cod-subtext {
+  color: #64748b !important;
+  font-size: 0.9em;
+  font-weight: normal !important;
+}
+
+.cod-warning {
+  color: #dc2626 !important;
+  font-weight: bold !important;
+  margin-top: 15px !important;
+}
+
+.payment-summary {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.amount {
+  font-weight: bold;
+  color: #1e3a8a;
+  font-size: 1.3em;
+}
+
+.pay-now-btn {
+  width: 100%;
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pay-now-btn:hover:not(.processing) {
+  background: #0f766e;
+  transform: translateY(-1px);
+}
+
+.pay-now-btn.processing {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.processing-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.security-note {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9em;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.lock-icon {
+  font-size: 1.1em;
+}
+
+.test-details {
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.test-details h4 {
+  color: #d97706;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.test-details p {
+  margin: 5px 0;
+  color: #92400e;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .payment-simulation {
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  .row {
+    grid-template-columns: 1fr;
+  }
+  
+  .payment-method {
+    padding: 12px;
+  }
+}

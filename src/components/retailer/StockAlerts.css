@@ -1,0 +1,132 @@
+.stock-alerts {
+  padding: 20px;
+}
+
+.stock-alerts h3 {
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.alert-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.alert-section.critical {
+  background: #fef2f2;
+  border: 2px solid #fecaca;
+}
+
+.alert-section.warning {
+  background: #fffbeb;
+  border: 2px solid #fed7aa;
+}
+
+.alert-section h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.2em;
+}
+
+.alert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.alert-item:last-child {
+  border-bottom: none;
+}
+
+.product-name {
+  font-weight: 600;
+  color: #374151;
+  flex: 2;
+}
+
+.stock-status {
+  color: #64748b;
+  font-size: 0.9em;
+  flex: 1;
+}
+
+.reorder-btn {
+  background: #a78bfa;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.reorder-btn:hover {
+  background: #8b5cf6;
+}
+
+.no-alerts {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f0f9ff;
+  border-radius: 10px;
+  border: 2px dashed #bae6fd;
+}
+
+.no-alerts p {
+  margin: 0;
+  color: #0369a1;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.stock-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.summary-item.warning {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.summary-item.critical {
+  background: #fecaca;
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .alert-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .reorder-btn {
+    align-self: stretch;
+  }
+  
+  .stock-summary {
+    grid-template-columns: 1fr;
+  }
+}

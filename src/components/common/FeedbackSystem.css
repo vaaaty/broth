@@ -1,0 +1,142 @@
+/*GEMINI*/
+
+
+.feedback-system {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.feedback-system h3 {
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Star Rating Section */
+.rating-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rating-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.star {
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 0;
+  color: #ccc; /* Default color for unrated stars */
+  transition: color 0.2s, transform 0.1s;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}
+
+.star.active {
+  color: #ffc107; /* Gold color for active stars */
+}
+
+.rating-text {
+  font-size: 0.9em;
+  color: #888;
+  min-height: 1.5em; /* Prevent layout shift */
+}
+
+/* Comment Section */
+.comment-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+  text-align: left;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+.submit-feedback {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: bold;
+}
+
+.submit-feedback:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.submit-feedback:disabled {
+  background-color: #a0c4ff;
+  cursor: not-allowed;
+}
+
+/* Success Message */
+.feedback-success {
+  text-align: center;
+  padding: 30px 20px;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  background-color: #e6ffed;
+}
+
+.success-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.feedback-success h3 {
+  color: #28a745;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.success-detail {
+    font-style: italic;
+    color: #666;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}

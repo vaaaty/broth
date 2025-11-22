@@ -1,0 +1,273 @@
+.about-us-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.4em;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.stat h3 {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+  color: #0d9488;
+}
+
+.stat p {
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.mission-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-statement {
+  font-size: 1.3em;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #374151;
+}
+
+.mission-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.highlight-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: #f8fafc;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.highlight-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.highlight-card h4 {
+  color: #1e3a8a;
+  margin-bottom: 16px;
+  font-size: 1.4em;
+}
+
+.story-section {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-text p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: #4b5563;
+}
+
+.story-image {
+  text-align: center;
+}
+
+.image-placeholder {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+  font-size: 4em;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.image-placeholder p {
+  font-size: 0.3em;
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+.values-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-card {
+  padding: 40px 30px;
+  background: #f8fafc;
+  border-radius: 12px;
+  text-align: center;
+  border-left: 4px solid #0d9488;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+}
+
+.value-icon {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.value-card h4 {
+  color: #1e3a8a;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+}
+
+.team-commitment {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  color: white;
+}
+
+.commitment-content p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.commitment-points {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.1em;
+}
+
+.point-icon {
+  font-size: 1.3em;
+}
+
+.join-movement {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.join-movement h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.join-movement p {
+  font-size: 1.2em;
+  color: #6b7280;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-btn {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+  background: #1e3a8a;
+  color: white;
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: #1e3a8a;
+  border: 2px solid #1e3a8a;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .story-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+  
+  .mission-highlights {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

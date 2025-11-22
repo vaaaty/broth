@@ -1,0 +1,275 @@
+.otp-auth {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  min-height: 600px;
+}
+
+.role-selection h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.role-selection > p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.role-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.role-card {
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-card:hover {
+  border-color: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+.role-card.selected {
+  border-color: #1e3a8a;
+  background: #f8fafc;
+}
+
+.role-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.role-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.role-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.role-card li {
+  padding: 5px 0;
+  color: #64748b;
+  position: relative;
+  padding-left: 15px;
+}
+
+.role-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+}
+
+.customer-theme .role-card.selected {
+  border-color: #0d9488;
+}
+
+.retailer-theme .role-card.selected {
+  border-color: #a78bfa;
+}
+
+.wholesaler-theme .role-card.selected {
+  border-color: #f472b6;
+}
+
+.registration-form h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #1e3a8a;
+}
+
+.form-group small {
+  color: #6b7280;
+  font-size: 0.8em;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 0.8em;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.back-btn {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.continue-btn,
+.submit-btn {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 2;
+  font-size: 16px;
+}
+
+.continue-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.otp-verification {
+  text-align: center;
+}
+
+.otp-verification h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.otp-verification > p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.otp-digit {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.otp-digit:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+.otp-timer {
+  margin-bottom: 20px;
+}
+
+.resend-btn {
+  background: none;
+  border: none;
+  color: #1e3a8a;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.demo-note {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.demo-note code {
+  background: #1e3a8a;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.completion-screen {
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.dashboard-btn {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .role-cards {
+    gap: 10px;
+  }
+  
+  .otp-digit {
+    width: 40px;
+    height: 40px;
+  }
+}
