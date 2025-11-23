@@ -70,11 +70,10 @@ const ProductSearch = ({ user }) => {
       { id: 26, name: "Organic Milk", category: "Dairy", price: 70, stock: 25, local: true, rating: 4.7, retailer: "Healthy&Organic", image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=150&h=150&fit=crop" },
       { id: 27, name: "Organic Eggs", category: "Dairy", price: 90, stock: 20, local: true, rating: 4.8, retailer: "Healthy&Organic", image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=150&h=150&fit=crop" },
 
-      // Grain Bakery
-      { id: 28, name: "Sourdough Bread", category: "Bakery", price: 85, stock: 16, local: true, rating: 4.6, retailer: "Grain Bakery", image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=150&h=150&fit=crop" },
-      { id: 29, name: "Bagels", category: "Bakery", price: 35, stock: 24, local: true, rating: 4.4, retailer: "Grain Bakery", image: "https://images.unsplash.com/photo-1555507038-44d78bf15b00?w=150&h=150&fit=crop" },
-      { id: 30, name: "Muffins", category: "Bakery", price: 25, stock: 18, local: true, rating: 4.7, retailer: "Grain Bakery", image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=150&h=150&fit=crop" },
-
+     // Grain Bakery
+      { id: 28, name: "Sponge Cake", category: "Bakery", price: 30, stock: 20, local: true, rating: 4.6, retailer: "Grain Bakery", image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=150&h=150&fit=crop" },
+      { id: 29, name: "Bagels", category: "Bakery", price: 40, stock: 0, local: true, rating: 4.4, retailer: "Grain Bakery", image: "https://images.unsplash.com/photo-1555507038-44d78bf15b00?w=150&h=150&fit=crop" },
+      { id: 30, name: "Muffins", category: "Bakery", price: 25, stock: 1, local: true, rating: 4.7, retailer: "Grain Bakery", image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=150&h=150&fit=crop" },
       // The Everything Store
       { id: 31, name: "Cooking Oil", category: "Pantry", price: 180, stock: 28, local: false, rating: 4.3, retailer: "The Everything Store", image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=150&h=150&fit=crop" },
       { id: 32, name: "Pasta", category: "Pantry", price: 65, stock: 32, local: false, rating: 4.2, retailer: "The Everything Store", image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=150&h=150&fit=crop" },
