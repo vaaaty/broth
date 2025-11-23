@@ -61,17 +61,42 @@
   padding: 15px;
   border-radius: 8px;
   border-left: 3px solid #0d9488;
+  text-align: center;
+}
+
+.mini-product-image {
+  height: 80px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .mini-product-card h5 {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   color: #1e293b;
+  font-size: 0.9em;
+}
+
+.mini-product-card .retailer {
+  color: #64748b;
+  font-size: 0.8em;
+  margin-bottom: 5px;
 }
 
 .mini-product-card .price {
   color: #0d9488;
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 0.9em;
 }
 
 .mini-add-btn {
@@ -129,6 +154,7 @@
   padding: 15px;
   background: white;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
 }
 
 .product-card:hover {
@@ -138,13 +164,18 @@
 
 .product-image {
   height: 120px;
-  background: #f1f5f9;
-  border-radius: 6px;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .local-badge {
@@ -167,6 +198,13 @@
 .category {
   color: #64748b;
   font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.retailer {
+  color: #1e3a8a;
+  font-size: 0.85em;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
